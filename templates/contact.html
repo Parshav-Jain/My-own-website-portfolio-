@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<title>Contact Me </title>
+<head>
+<style>
+body{overflow-x: hidden;}
+.navbar{
+border:1px solid black;
+border-radius:29px;
+background-color:black;
+width:1351px;
+height:48px;
+}
+.heading{
+overflow:hidden;
+color:white;
+position:relative;
+left:31px;
+}
+.navbar ul{
+overflow:hidden;
+float:right;
+position:relative;
+top:-88px;
+left:-27px;
+}
+.navbar li {
+margin:33px;
+display:inline-block;
+list-style:none;
+}
+.navbar li a {
+text-decoration:none;
+color:white;
+font-size:20px;
+}
+.navbar li:hover{
+transition:all 0.5s linear;
+transform:scale(1.2);
+}
+
+/* Main work starts /*/
+
+form{
+    max-width:420px; margin:50px auto;
+}
+
+input{
+    transition: all 0.3s;
+    font-size:18px;
+    width: 350px;
+    padding: 13px;
+    margin-bottom: 20px;
+    font-family:monospace;
+    line-height: 22px;
+    width:100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+#message{
+    line-height: 150%;
+    transition: all 0.3s;
+    width: 350px;
+    width: 100%;
+    padding: 13px;
+    font-size: 20px;
+    height: 150px;
+    line-height: 22px;
+    line-height: 150%;
+    resize:vertical;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    outline: 0;
+}
+input[type ='submit']{
+    margin-top: 10px;
+    padding: 13px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+<div class="heading">
+<p> CONTACT ME </p>
+</div>
+<header>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/Introduction.html">Home</a></li>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/About.html">About me </a></li>
+<li><a href="file:///F:/CODING/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/Contact%20Me.html?name=Parshav+Jain&message=Hello+Parshav+%2C+I+am+impressed+by+your+code+and+your+website+and+I+am+thinking+to+put+you+on+my+job+.+I+hope+it+is+your+fine+with+it+"> Contact me</a></li>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/My%20websites.html">My websites </a></li>
+</ul>
+</nav>
+</header>
+<div class = 'main'>
+    <form action = "/contact" , method="POST">
+        <input type  = 'text' placeholder="Name" id = 'name' name = 'name'><br>
+        <input type = 'text' placeholder="Email" id = 'email' nmae = 'email'><br>
+        <textarea id = 'message' placeholder="Message" name = 'message'></textarea>
+        <input type = 'submit' value="SUBMIT">
+
+    </form>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html>

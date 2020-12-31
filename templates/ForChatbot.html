@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<title> Design for chatbot </title>
+<style>
+header{
+border:1px solid blue;
+border-radius:10px;
+background-color:#1a27c0;
+height:50px;
+position:relative;
+top:586px;
+left:0px;
+}
+.content p{
+text-align:center;
+color:white;
+font-size:25px;
+position:relative;
+top:-21px;
+left:1px;
+}
+.content span{
+position:relative;
+top:-67px;
+left:652px;
+color:white;
+}
+aside{
+border:1px solid grey;
+background-color:white;
+}
+main{
+position:relative;
+top:463px;
+left:1px;
+}
+input{
+width:308px;
+height:32px;
+border-radius:5px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<p> </p>
+<div class="content">
+<p>Chatbot </p><br>
+<span> online </span>
+</header>
+<aside>
+
+</aside>
+<main>
+<input type="text" id="textbox" placeholder="Type your message">
+<button onkeypress="check()" id="btn"> Send </button>
+<br><br><br><br><br>
+<p></p><br>
+
+
+<script>
+alert("In the Chatbox , the first letter must be capital or the program will crash. Your first sentence will always be How are you");
+function check(){
+var a = document.getElementById('textbox');
+if ( a.value == "How are you" || a.value == "Are you fine"){
+document.write("<p>I am fine</p>");
+document.write("<input type=text  id=textbox> <button onclick=check() id=btn>Send</button>");
+document.write("<style>header{border:1px solid blue;border-radius:10px;background-color:#1a27c0;height:50px;position:relative;top:-519px;left:0px;}.content {background-color:#1a27c0;height:50px;border:1px solid blue; border-radius:10px;text-align:center;color:black;font-size:25px;position:relative;top:978px;left:1px;color:white;}.content span{position:relative;top:-81px;left:0px;color:white;}aside{border:1px solid grey;background-color:white;}main{position:relative;top:463px;left:1px;}input{width:308px;height:32px;border-radius:5px;}#btn{position:relative; top:449px;}input[type=text]{width:308px;top:449px;position:relative;height:32px;} .content p{ position:relative; top:-24px;}</style>");
+
+document.write("<div class=container><header><p> </p><div class=content><p>Chatbot </p><br><span> online</span></header><aside></aside>");
+
+}
+else if (a.value == "What is your age" || a.value == "How old are you"){
+document.write("<span> What is your age</span>");
+document.write("<style> span{ text-align:center;}</style>");
+document.write('<p>I am a Machine,Machines dont have age</p>');
+}
+else if (a.value == "Will you marry me" || a.value == "Are you married"){
+document.write("<p>Yes</p>");
+}
+else if ( a.value =="What can you do for me"){
+document.write("You can ask me anything");
+}
+else if (a.value == "Ok"){
+document.write("<p>:)</p><br>");
+}
+else if(a.value == "Very good" || a.value =="Good"){
+document.write("Thank You");
+}
+else if(a.value =="Who created you" || a.value =="Who made you" || a.value=="Who is your inventor"){
+document.write("<p> My Inventor is Parshav Jain</p>");
+} 
+else if(a.value == "Play me a song" || a.value =="Sing a song"){
+document.write("I can't do it");
+}
+else if (a.value =="Tell me a joke"){
+document.write("Why did the man name is dogs Rolex and Timex ?<br>");
+document.write("Because they were watch dogs");
+}
+else if(a.value =="What is your name"){
+document.write("My name is Chigoti");
+}
+else if(a.value == "Where does you live"){
+document.write("I live in your laptop");
+}
+else if(a.value =="What is the time"){
+document.write("The time is "+new Date());
+}
+else if (a.value =="Who is the prime minister of India"){
+document.write("The prime minister of India is Narendra Modi");
+}
+else if (a.value == "Who is the prime minister"){
+document.write("Of which country");
+}
+else if(a.value == "Hello"){
+document.write("Hii");
+}
+else if( a.value == "Are you any human"){
+document.write("No, I am a Machine");
+}
+else if(a.value == "Thank you"){
+document.write("Your welcome");
+}
+else if(a.value == ""){
+document.write("Your welcome");
+}
+else{
+document.write("</p>Couldn't Understand<p>");
+}
+}
+
+
+
+</script>
+</body>
+</html>

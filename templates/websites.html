@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<title>My websites</title>
+<style>
+.container{
+overflow:hidden;
+background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("{{url_for('static' , filename = 'bg2.jpg')}}");
+height:97vh;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.navbar{
+width:1351px;
+height:48px;
+}
+.heading{
+font-size:18px;
+overflow:hidden;
+color:white;
+position:relative;
+left:31px;
+}
+.navbar ul{
+overflow:hidden;
+float:right;
+position:relative;
+top:-56px;
+left:-1px;
+}
+.navbar li {
+margin:33px;
+display:inline-block;
+list-style:none;
+}
+.navbar li a {
+text-decoration:none;
+color:white;
+font-size:20px;
+}
+.navbar li:hover{
+transition:all 0.5s linear;
+transform:scale(1.2);
+}
+.heading{
+position:relative;
+top:14px;
+left:49px;
+}
+a{
+text-decoration:none;
+}
+.content{
+width:1318px;
+height:101px;
+z-index:123;
+position:relative;
+left:37px;
+top:118px;
+}
+button{
+background-color:white;
+width:100px;
+height:100px;
+}
+button:hover{
+background-color:white;
+transition:all 0.5s linear;
+transform:scale(1.2);
+}
+.goodluck{
+width:303px;
+height:100px;
+}
+.goodluck img{
+width:271px;
+height:225px;
+position:relative;
+left:-7px;
+top:-60px;
+}
+.apna{
+position:relative;
+top:-34px;
+left:18px;
+width:303px;
+height:100px;
+}
+.apna img{
+width:220px;
+height:190px;
+position:relative;
+left:8px;
+top:-51px;
+}
+#Chatbot{
+position:relative;
+top:-235px;
+left:656px;
+width:302px;
+height: 100px;
+}
+#Chatbot a{
+font-size:16px;
+text-decoration:none;
+color:black;
+}
+#Chatbot img{
+    width:302px;
+    height : 100px;
+}
+#fitness{
+position:relative;
+top:-118px;
+left:-302px;
+width:302px;
+height:100px;
+}
+#fitness a{
+text-decoration:none;
+}
+#fitness img{
+width:302px;
+height:100px;
+position:relative;
+top:-3px;
+left:-11px;
+}
+
+#own_web{
+    position: relative;
+    top:-118px;
+    left:-285px;
+    width : 302px;
+    height: 100px;
+}
+#own_web a {
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+}
+#own_web img{
+    width: 302px;
+    height: 100px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+<header>
+<span class="heading"> MY WEBSITES </span>
+<nav>
+<ul>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/Introduction.html">Home</a></li>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/About.html">About me </a></li>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/Contact%20Me.html"> Contact me</a></li>
+<li><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/My%20own%20website%20(%20my%20introduction%20)/My%20websites.html">My websites </a></li>
+</ul>
+</nav>
+</header>
+</div>
+<div class="content">
+<button class="goodluck"><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Goodluck%20website/Introduction.html"><img src="../../apna sweets/goodluckstore1.png" class="goodluck img"></a></button>
+<button class="apna"><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Apna%20sweets/apna%20sweets.html"><img src="../../apna sweets/apnasweets.png" class="apna img"></a></button>
+<button id="Chatbot"> <a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Practises/transform.html"><img src = "{{url_for('static' , filename = 'chatbot.jpg'}}"></a></button>
+<button id="fitness"><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Fitness%20center/Fitness%20center.html"><img src="../../fitness center/logo.jpg" id="fitness img"></a>
+
+<button id = 'own_web'><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Make%20your%20own%20website/GO&ROCK.html"><img src = "{{url_for('static',filename = 'own_web.png'"></a></button>
+
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>

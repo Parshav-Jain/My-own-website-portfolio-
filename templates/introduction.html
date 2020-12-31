@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+<title> Introduction </title>
+<style>
+html{
+  scroll-behavior: smooth;
+}
+.container{
+  overflow-x:hidden;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{{url_for('static' , filename = 'bg4.jpg')}}");
+  height:97vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+p{
+  font-size:20px;
+}
+.navbar{
+  border:1px solid black;
+  border-radius:29px;
+  background-color:black;
+  width:1351px;
+  height:48px;
+}
+.heading{
+  overflow:hidden;
+  color:white;
+  position:relative;
+  left:31px;
+}
+.navbar ul{
+  overflow:hidden;
+  float:right;
+  position:relative;
+  top:-88px;
+  left:-27px;
+}
+.navbar li {
+  margin:30px;
+  display:inline-block;
+  list-style:none;
+}
+.navbar li a {
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+  cursor: pointer;
+}
+.navbar li:hover{
+  transition:all 0.5s linear;
+  transform:scale(1.2);
+}
+.top_btn{
+  float: right;
+  position:fixed;
+  top:0px;
+  left:0px;
+  font-size:25px;
+  display: flex;
+
+}
+button{
+  font-size: 20px;
+  border:none;
+  background-color:#000;
+}
+/*
+.content{
+  position:relative;
+  top:247px;
+  left:448px;
+  font-size:30px;
+  margin:50px 0px; padding:0px;
+  text-align:center;
+  display: inline-block;
+}
+*/
+#changer:after{
+  content:'';
+  animation: changer 9s infinite linear;
+}
+@keyframes changer{
+  0%{content:'CODER';}
+  20%{content:'WEB DEVELOPER';}
+  30%{content:'FRONT-END DEVELOPER';}
+  40%{ content:'GUITARIST';}
+  50%{ content:'PIANOIST';}
+  60%{ content:'WEB DESIGNER';}
+  70%{content:'CODER';}
+  80%{content:'WEB DEVELOPER';}
+  90%{content:'FRONT-END-DEVELOPER';}
+  100%{ content:'GUITARIST';}
+ }
+
+.starter{
+font-weight:none;
+color:white;
+text-align:center;
+position:relative;
+top:234px;
+left:289px;
+font-size:30px;
+overflow:hidden;
+}
+
+/* Main Page Ends*/
+/* About Me Page Starts */
+#about_hr{
+  margin:0;
+  position: relative;
+  top:10px;
+  z-index: 10000;
+}
+.about_me{
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{{url_for('static' , filename = 'bg6.jpg')}}");
+  height:70vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-top:0;
+  padding: 40px;
+  color:#ffffff;
+  font-size:20px;
+}
+.about_heading{
+  padding: 10px;
+  text-align: start;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size:30px;
+}
+#heading{
+  font-size: 25px;
+  font-weight: 50;
+}
+
+/*About Me Page ends */
+/* My Websites Page */
+#web_hr{
+  margin:0;
+  position: relative;
+  top:10px;
+  z-index: 10000;
+}
+.my_web_heading{
+  padding: 10px;
+  text-align: start;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size:30px;
+}
+.my_web{
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{{url_for('static' , filename = 'bg2.jpg')}}");
+  height:70vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-top:0;
+  padding: 40px;
+  color:#ffffff;
+  font-size:20px;
+
+}
+
+button{
+position: absolute;
+background-color:white;
+width:100px;
+height:100px;
+}
+button:hover{
+background-color:white;
+transition:all 0.5s linear;
+transform:scale(1.2);
+}
+.goodluck{
+position: relative;
+top:1px;
+left:1px;
+width:303px;
+height:100px;
+}
+.goodluck img{
+width:271px;
+height:225px;
+position:relative;
+left:-7px;
+top:-60px;
+}
+.apna{
+position:relative;
+top:-35px;
+left:18px;
+width:303px;
+height:100px;
+}
+.apna img{
+width:220px;
+height:190px;
+position:relative;
+left:8px;
+top:-51px;
+}
+#Chatbot{
+  position:relative;
+  top:-127px;
+  left:355px;
+  width:302px;
+  height: 100px;
+
+}
+#Chatbot a{
+  font-size:16px;
+  text-decoration:none;
+  color:black;
+}
+#Chatbot img{
+  width:302px;
+  height : 100px;
+}
+#fitness{
+  position:relative;
+  top:-126px;
+  left:-268px;
+  width:302px;
+  height:100px;
+}
+#fitness a{
+  text-decoration:none;
+}
+#fitness img{
+  width:302px;
+  height:100px;
+  position:relative;
+  top:-3px;
+  left:-11px;
+}
+
+#own_web{
+  position: relative;
+  top:-91px;
+  width : 302px;
+  height: 100px;
+}
+#own_web a {
+  text-decoration: none;
+  color:black;
+  font-size:20px;
+}
+#own_web img{
+  width: 302px;
+  height: 100px;
+  position: relative;
+  top:8px;
+  left:-15px;
+}
+@media (max-width: 1440px){
+  .starter{
+    left:325px;
+  }
+}
+@media (max-width: 1024px){
+  .starter{
+    top:161px;
+    left:136px;
+  }
+  .navbar ul{
+    left:-353px;
+  }
+}
+@media (max-width:768px){
+  .starter{
+    top:100px;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+<div class="heading">
+<p> PARSHAV JAIN </p>
+</div>
+<header>
+<nav>
+<ul>
+<li><a id = 'home'>Home</a></li>
+<li><a id = 'about'>About me </a></li>
+<li><a id = 'contact'>Contact me</a></li>
+<li><a id = 'websites'>My websites </a></li>
+</ul>
+</nav>
+</header>
+<div class="starter">
+  I AM PARSHAV JAIN<br>
+  I AM A <span id="changer"></span>
+  
+</div>
+
+<div class = 'top_btn'>
+  <button id = 'top_going_btn'>↑</button>
+</div>
+
+</div>
+
+</div>
+<hr id = 'about_hr'>
+<div class = 'about_me'>
+  <div class = 'about_heading'>
+    <p id = 'heading'>ABOUT ME</p> 
+  </div>
+  <div class='content'>
+    <span> My name is Parshav Jain . I was born on 16 May 2008 in Indore.</span><br>
+    <span>I live in Dewas.When I was in class 2nd , I started playing piano </span><br>
+    <span> and ended my piano hobby at age of 12. At the age of 12 , I buyed</span><br>
+    <span> a guitar but I did not like playing guitar because i was not familier </span><br>
+    <span>with it . I like piano because i was playing it from 4 years. After that </span><br>
+    <span>I started doing coding at the age of 12. My first coding language was</span> <br>
+    <span>C progamming language.After that I learned HTML , CSS , JS . This means</span> <br>
+    <span>  I completed the the cource of Front-End Developer. After,doing this </span><br>
+    <span>my school got started and now I have to manage my studies and hobbies also</span><br>
+    <span>because I want to remain good in study also and I am also the Topper of the </span><br>
+    <span>class. </span>
+    </div>
+</div>
+
+</div>
+<hr id = 'web_hr'>
+<div class = 'my_web'>
+  <div class = 'my_web_heading'>
+    <p>MY WEBSITES</p>
+  </div>
+
+<div class="content">
+
+<button class="goodluck"><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Goodluck%20website/Introduction.html"><img src="{{url_for('static', filename = 'goodluckstore1.png')}}" class="goodluck img"></a></button>
+<button class="apna"><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Apna%20sweets/apna%20sweets.html"><img src="{url_for('static' , filename = 'apnasweets.png')}}" class="apna img"></a></button>
+<button id="Chatbot"> <a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Practises/transform.html"><img src = "{{url_for('static' , filename = 'chatbot.jpg')}}"></a></button>
+<button id="fitness"><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Fitness%20center/Fitness%20center.html"><img src="{{url_for('static' , filename = 'logo.jpg')}}" id="fitness img"></a>
+<br><br>
+<button id = 'own_web'><a href="file:///C:/Users/Minnie/Desktop/HTML%20Projects/Make%20your%20own%20website/GO&ROCK.html"><img src = "{{url_for('static',filename = 'own_web.png')}}"></a></button>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $("#home").click(function(){
+    window.scroll(0,0)
+  })
+
+  $('#about').click(function(){
+    window.scroll(0,629.5999755859375)
+  })
+  $('#websites').click(function(){
+    window.scroll(0,1213.5999755859375)
+  })
+
+
+  127.19999694824219
+</script>
+
+</body>
+</html>
